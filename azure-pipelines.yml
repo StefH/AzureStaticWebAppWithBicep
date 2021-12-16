@@ -4,6 +4,9 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
+variables:
+  - group: Generic
+
 steps:
   - checkout: self
     submodules: true
@@ -19,7 +22,7 @@ steps:
       azureResourceManagerConnection: $(serviceConnection)
       subscriptionId: $(subscriptionId)
       action: Create Or Update Resource Group
-      resourceGroupName: $(azureResourceGroup)
+      resourceGroupName: $(staticWebAppResourceGroup)
       location: $(location)
       templateLocation: Linked artifact
       csmFile: 'infra/static-web-app/main.json' # created by bash script
