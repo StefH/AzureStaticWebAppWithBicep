@@ -11,13 +11,13 @@ steps:
   - checkout: self
     submodules: true
 
-- task: AzureCLI@2
-  displayName: Disconnect StaticWebApp
-  inputs:
-    azureSubscription: $(serviceConnection)
-    scriptType: 'bash'
-    scriptLocation: 'inlineScript'
-    inlineScript: 'az staticwebapp disconnect -n $(staticWebAppName)'
+  - task: AzureCLI@2
+    displayName: Disconnect StaticWebApp
+    inputs:
+      azureSubscription: $(serviceConnection)
+      scriptType: 'bash'
+      scriptLocation: 'inlineScript'
+      inlineScript: 'az staticwebapp disconnect -n $(staticWebAppName)'
 
   - bash: az bicep build --file infra/static-web-app/main.bicep
     displayName: 'Compile Bicep to ARM'
