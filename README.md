@@ -9,7 +9,7 @@ I've also added a `staticwebapp.config.json` with a `navigationFallback` like th
 ``` json
 {
     "navigationFallback": {
-        "rewrite": "/index.html"
+        "rewrite": "/"
     }
 }
 ```
