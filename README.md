@@ -5,7 +5,7 @@ Azure Static Web App with Bicep
 Site is running at https://nice-stone-071af0403.azurestaticapps.net/
 
 ### Notes
-I've also added a `staticwebapp.config.json` with a `navigationFallback` like this:
+I've also added a [staticwebapp.config.json](https://docs.microsoft.com/en-us/azure/static-web-apps/configuration) with a `navigationFallback` like this:
 ``` json
 {
     "navigationFallback": {
