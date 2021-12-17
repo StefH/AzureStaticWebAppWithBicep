@@ -23,6 +23,7 @@ But the 404 page from the blog:
 ![Blog 404](/resources/blog-404.png)
 
 
-### Based on 
+### References
 - https://blog.johnnyreilly.com/2021/08/15/bicep-azure-static-web-apps-azure-devops
 - https://blog.johnnyreilly.com/2021/12/05/azure-static-web-app-deploy-previews-with-azure-devops
+- https://medium.com/bb-tutorials-and-thoughts/two-ways-to-deploy-react-static-web-apps-service-on-azure-4e4ee7aac852
